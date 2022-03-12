@@ -1,0 +1,27 @@
+<button type="button" class="btn btn-danger" style="float: right; margin: 1%;" (click)="activeModal.dismiss('Cross click')">
+    CLOSE
+  </button>
+<div class="wrapper">
+    <div class="logo"><img [src]="logo" alt="" /></div>
+    <div class="text-center mt-4 name">HelPO</div>
+    <form [formGroup]="form" (ngSubmit)="login(form)" class="p-3 mt-3">
+        <div class="form-field d-flex align-items-center">
+            <input formControlName="email" type="email" placeholder="Email" />
+        </div>
+        <span *ngIf="email?.touched && email?.invalid" class="alert alert-danger">
+            <span *ngIf="email?.errors?.['required']">Email is required</span>
+        <span *ngIf="email?.errors?.['email']">Enter valid Email</span>
+        </span>
+        <div class="form-field d-flex align-items-center">
+            <input formControlName="password" type="password" placeholder="Password" />
+        </div>
+        <span *ngIf="password?.touched && password?.invalid" class="alert alert-danger">
+            <span *ngIf="password?.errors?.['required']">Password is required</span>
+        </span>
+        <div *ngIf="form?.errors" class="alert alert-danger">Invalid Username or Password</div>
+        <button type="submit" class="btn mt-3">Login</button>
+    </form>
+    <div class="text-center fs-6">
+        <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<button type="button" class="btn btn-danger" style="float: right; margin: 1%;" (click)="activeModal.dismiss('Cross click')">
+    CLOSE
+  </button>
+<div class="wrapper">
+    <div class="logo"><img [src]="logo" alt="" /></div>
+    <div class="text-center mt-4 name">HelPO</div>
+    <form [formGroup]="form" (ngSubmit)="signup(form)" class="p-3 mt-3">
+        <div class="form-field d-flex align-items-center">
+            <input formControlName="userName" type="text" placeholder="Username" />
+        </div>
+        <span *ngIf="userName?.touched && userName?.invalid" class="alert alert-danger">
+            <span *ngIf="userName?.errors?.['required']">Username is required</span>
+        </span>
+        <div class="form-field d-flex align-items-center">
+            <input formControlName="fullName" type="text" placeholder="Full Name" />
+        </div>
+        <span *ngIf="fullName?.touched && fullName?.invalid" class="alert alert-danger">
+            <span *ngIf="fullName?.errors?.['required']">Name is required</span>
+        </span>
+        <div class="form-field d-flex align-items-center">
+            <input formControlName="email" type="email" placeholder="Email" />
+        </div>
+        <span *ngIf="email?.touched && email?.invalid" class="alert alert-danger">
+            <span *ngIf="email?.errors?.['required']">email is required</span>
+        <span *ngIf="email?.errors?.['email']">Enter valid email</span>
+        </span>
+        <div class="form-field d-flex align-items-center">
+            <input formControlName="password" type="password" placeholder="Password" />
+        </div>
+        <span *ngIf="password?.touched && password?.invalid" class="alert alert-danger">
+            <span *ngIf="password?.errors?.['required']">Field is required</span>
+        </span>
+        <div class="form-field d-flex align-items-center">
+            <input formControlName="confirmpassword" type="password" placeholder="Confirm Password" />
+        </div>
+        <span *ngIf="confirmpassword?.touched && confirmpassword?.invalid" class="alert alert-danger">
+            <span *ngIf="confirmpassword?.errors?.['required']">Field is required</span>
+        </span>
+        <div *ngIf="form?.errors" class="alert alert-danger">{{msg}}</div>
+        <button type="submit" class="btn mt-3">Register</button>
+    </form>
+    <div class="text-center fs-6">
+        <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+    </div>
+</div>
