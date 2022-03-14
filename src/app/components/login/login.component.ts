@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -19,11 +20,10 @@ export class LoginComponent implements OnInit {
   get password() {
     return this.form.get('password');
   }
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor(public activeModal: NgbActiveModal,private userService:UserService) { }
   ngOnInit(): void {
   }
   login(f: any) {
     console.log(f.value)
-    this.form.setErrors({invalid:true})
   }
 }

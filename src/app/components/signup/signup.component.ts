@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserService } from 'src/app/services/user.service';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-signup',
@@ -41,6 +42,11 @@ export class SignupComponent implements OnInit {
     if (user.password !== user.confirmpassword) {
       this.msg = "Password not matched";
       return this.form.setErrors({ invalid: true });
+    }
+    else {
+      this.userService.signup(user).subscribe();
+      this.modalService.dismissAll();
+      this.modalService.open(LoginComponent);
     }
   }
 }

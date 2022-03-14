@@ -10,7 +10,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './components/signup/signup.component';
 import {HttpClientModule} from '@angular/common/http';
-import { SaveComponent } from './components/save/save.component'
+import { SearchComponent } from './components/homepage/search/search.component';
+import { MiddleSectionComponent } from './components/homepage/middle-section/middle-section.component';
+import { LowerComponent } from './components/homepage/lower/lower.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,9 @@ import { SaveComponent } from './components/save/save.component'
     HomepageComponent,
     LoginComponent,
     SignupComponent,
-    SaveComponent,
+    SearchComponent,
+    MiddleSectionComponent,
+    LowerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule,HttpClientModule],
   providers: [],
