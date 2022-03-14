@@ -1,6 +1,9 @@
 {
     "name": "hel-po-frontend",
     "version": "0.0.0",
+    "engines": {
+        "node": "16.x"
+    },
     "scripts": {
         "ng": "ng",
         "start": "node server.js",
@@ -51,9 +54,5 @@
         "karma-jasmine": "~4.0.0",
         "karma-jasmine-html-reporter": "~1.7.0",
         "typescript": "~4.5.2"
-    },
-    "engines": {
-        "npm": ">=7.0.0",
-        "node": ">=16.0.0"
     }
 }
