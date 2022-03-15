@@ -4,10 +4,12 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(`${__dirname}/HelPO-frontend/dist/`));
-app.get('*', (req, res) => {
-    res.sendFile(`./HelPO-frontend/dist/index.html`); // load the single view file (angular will handle the page changes on the front-end)
+app.use(express.static(__dirname + '/dist/HelPO-frontend'));
+
+app.get('/*', function(req, res) {
+
+    res.sendFile(path.join(__dirname + '/dist/HelPO-frontend/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 4000);
