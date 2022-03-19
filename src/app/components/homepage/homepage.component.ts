@@ -6,11 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-img_src1="assets/images/carousel_img1.jpg";
-img_src2="assets/images/carousel_img2.jpg"
+  img_src = ["assets/images/image1.jpg", "assets/images/image2.jpg", "assets/images/image3.jpg"];
+  actualImage: any;
+  changeBackgroundCounter = 0;
   constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.actualImage = this.img_src[0];
+    setInterval(() => {
+      this.changeBackgroundCounter++;
+      if (this.changeBackgroundCounter > this.img_src.length - 1) {
+        this.changeBackgroundCounter = 0;
+      }
+      this.actualImage = this.img_src[this.changeBackgroundCounter];
+    }, 5000);
   }
-
 }
