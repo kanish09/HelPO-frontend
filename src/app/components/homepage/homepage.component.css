@@ -15,8 +15,8 @@
 
 h2 {
     font-weight: bold;
-    animation: bounceIn 1s 1.2s ease-in-out both;
-    -webkit-animation: bounceIn 1s 1.2s ease-in-out both;
+    animation: bounceIn 1.2s 1.2s ease-in-out both;
+    -webkit-animation: bounceIn 1.2s 1.2s ease-in-out both;
 }
 
 @-webkit-keyframes bounceIn {
@@ -55,8 +55,8 @@ h2 {
 
 h1 {
     font-weight: bolder;
-    animation: fadeInRight 0.8s 2.2s ease-in-out both;
-    -webkit-animation: fadeInRight 0.8s 2.2s ease-in-out both;
+    animation: fadeInRight 1s 2.2s ease-in-out both;
+    -webkit-animation: fadeInRight 1s 2.2s ease-in-out both;
 }
 
 @-webkit-keyframes fadeInRight {
