@@ -1,30 +1,37 @@
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner" align="center">
-        <div class="carousel-item active">
-            <img [src]="actualImage" class="d-block w-100 carousel_image" alt="...">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img [src]="img_src[0]" class="d-block w-100 carousel_image" alt="...">
             <div class="carousel-caption">
-                <div class="row">
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search nearby clinic,hospital,doctor,etc">
-                            <button class="btn btn-secondary" type="button" id="button-addon2">Search</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="row">
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Look for symptoms">
-                            <button class="btn btn-secondary" type="button" id="button-addon2">Search</button>
-                        </div>
-                    </form>
-                </div>
+                doctors who care
+                <div>our doctors listen to you patiently and only precribe what's neccessary</div>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img [src]="img_src[1]" class="d-block w-100 carousel_image" alt="...">
+            <div class="carousel-caption">
+                curated doctors
+                <div>we hand picks doctor for you,onboarded after a mutli-step screening process</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img [src]="img_src[2]" class="d-block w-100 carousel_image" alt="...">
+            <div class="carousel-caption">
+                transparent and secure
+                <div>nothing is hidden.access your medical records in your health locker,24*7</div>
             </div>
         </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 </div>
-
-<div class="col-md-12" style="padding-left: 5%; padding-right: 5%;margin-top: 2%;">
+<div class="col-md-12" style="padding-left: 5%; padding-right: 5%;margin-top: 6%;">
     <div class="row d-flex justify-content-center">
         <div class="col-xl-3 col-lg-6">
             <div class="card l-bg-cherry">
