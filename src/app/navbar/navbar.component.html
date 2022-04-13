@@ -1,27 +1,19 @@
-<div id="wrapper">
-    <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-            <div class="sidebar-header">
-                <div class="sidebar-brand">
-                    <a href="#">Brand</a></div>
+<div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black py-0 px-0">
+        <a class="navbar-brand" href="#"><img id="logo" src="https://i.imgur.com/K7Nwq4V.jpg"> &nbsp;&nbsp;&nbsp;HOHC</a>
+        <span class="v-line"></span>
+        <button class="navbar-toggler mr-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"> <a class="nav-link" href="#">Book A Appointment</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Schedule Test</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Consult</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Contact Us</a> </li>
+            </ul>
+            <div class="d-flex">
+                <button class="btn btn-outline-info" (click)="login()">LOGIN</button>
+                <button class="btn btn-outline-info" (click)="signup()">SIGNUP</button>
             </div>
-            <li><a href="#home">Book A Appointment</a></li>
-            <li><a href="#about">Schedule Your Test</a></li>
-            <li><a href="#events">Consult</a></li>
-            <li><a href="#team">Contact Us</a></li>
-            <li><a href="#team">Login</a></li>
-            <li><a href="#team">Register</a></li>
-        </ul>
+        </div>
     </nav>
-    <div class="d-flex flex-row-reverse">
-        <button class="btn btn-outline-info">Login</button>
-        <button class="btn btn-outline-info">Register</button>
-    </div>
-    <div id="page-content-wrapper">
-        <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
-                 <span class="hamb-top"></span>
-                 <span class="hamb-middle"></span>
-                 <span class="hamb-bottom"></span>
-             </button>
-    </div>
 </div>

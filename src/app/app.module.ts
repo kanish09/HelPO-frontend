@@ -13,6 +13,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { SearchComponent } from './components/homepage/search/search.component';
 import { MiddleSectionComponent } from './components/homepage/middle-section/middle-section.component';
 import { LowerComponent } from './components/homepage/lower/lower.component';
+import { ConsultComponent } from './components/consult/consult.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { LowerComponent } from './components/homepage/lower/lower.component';
     SearchComponent,
     MiddleSectionComponent,
     LowerComponent,
+    ConsultComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule,HttpClientModule],
   providers: [],
