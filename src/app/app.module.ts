@@ -11,9 +11,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './components/signup/signup.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SearchComponent } from './components/homepage/search/search.component';
-import { MiddleSectionComponent } from './components/homepage/middle-section/middle-section.component';
 import { LowerComponent } from './components/homepage/lower/lower.component';
 import { ConsultComponent } from './components/consult/consult.component';
+import { FilterComponent } from './components/consult/filter/filter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +23,9 @@ import { ConsultComponent } from './components/consult/consult.component';
     LoginComponent,
     SignupComponent,
     SearchComponent,
-    MiddleSectionComponent,
     LowerComponent,
     ConsultComponent,
+    FilterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule,HttpClientModule],
   providers: [],
