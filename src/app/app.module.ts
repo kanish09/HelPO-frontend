@@ -14,6 +14,9 @@ import { SearchComponent } from './components/homepage/search/search.component';
 import { LowerComponent } from './components/homepage/lower/lower.component';
 import { ConsultComponent } from './components/consult/consult.component';
 import { FilterComponent } from './components/consult/filter/filter.component';
+import { MedicinesComponent } from './components/medicines/medicines.component';
+import { TestComponent } from './components/test/test.component';
+import { ChatComponent } from './components/chat/chat.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +29,9 @@ import { FilterComponent } from './components/consult/filter/filter.component';
     LowerComponent,
     ConsultComponent,
     FilterComponent,
+    MedicinesComponent,
+    TestComponent,
+    ChatComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule,HttpClientModule],
   providers: [],

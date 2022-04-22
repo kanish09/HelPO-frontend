@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-md-3" style="background-color: #28328c">
+        <app-filter></app-filter>
+    </div>
+    <div class="col-md-9" style="max-width: 1100px;">
+        <h1 class="heading">Medicines at Your Doorstep</h1>
+        <h4>Book appointments with minimum wait time and verified Doctors</h4>
+        <div class="row mb-3" style=" padding: 2%;background-color: #28328c;color: white;cursor: pointer;">
+            <div class="col" style="font-size: large;color: mistyrose;cursor: text;">Sort By</div>
+            <div class="col category">Relevance</div>
+            <div class="col category">Rating</div>
+            <div class="col category">Low to high</div>
+            <div class="col category">High to low</div>
+        </div>
+        <div *ngFor="let i of item" class="row">
+            <div class="col" *ngFor="let i of item">
+                <div class="card text-center">
+                    <img [src]="pic_src" alt="Denim Jeans">
+                    <h1>Medicine name</h1>
+                    <p class="price">$19.99</p>
+                    <p><button class="btn btn-info">Add to Cart</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

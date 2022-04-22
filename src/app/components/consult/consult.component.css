@@ -1,4 +1,23 @@
-img {
-    border-radius: 50%;
-    height: 175px;
+.heading {
+    font-weight: bold;
+    font-size: x-large;
+    font-family: ui-sans-serif;
+    margin: 2% 0% 1% 0%;
+}
+
+.category:hover {
+    text-decoration: underline white;
+}
+
+h3 {
+    cursor: pointer;
+    color: aqua;
+}
+
+h3:hover {
+    text-decoration: underline;
+}
+
+.fa-star {
+    color: gold;
 }

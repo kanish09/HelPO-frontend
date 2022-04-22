@@ -1,52 +1,113 @@
 <div class="row">
-    <div class="col-md-3" style="background-color: grey">
+    <div class="col-md-3" style="background-color: #28328c">
         <app-filter></app-filter>
     </div>
     <div class="col-md-9" style="max-width: 1100px;">
-        <div class="row" style="background-color:aliceblue; margin: 0px 0px 20px 0px;">
-            <div class="col-md-9">
-                <h1>Dr. Rufus Sunu</h1>
-                <h5>MBBS</h5>
-                <div>rating</div>
-                <div>clicnic or hospital name</div>
-                <button class="btn btn-primary">Chat now</button>
-                <button class="btn btn-primary">Book a Appointment</button>
-            </div>
-            <div class="col-md-3"><img [src]="pic_src" [alt]="pic_src"></div>
+        <h1 class="heading">Consult With Doctors</h1>
+        <h4>Book appointments with minimum wait time and verified Doctors</h4>
+        <div class="row mb-3" style=" padding: 2%;background-color: #28328c;color: white;cursor: pointer;">
+            <div class="col" style="font-size: large;color: mistyrose;cursor: text;">Sort By</div>
+            <div class="col category">Available Now</div>
+            <div class="col category">Female Doctor</div>
+            <div class="col category">Male Doctor</div>
+            <div class="col category">Low to high</div>
+            <div class="col category">Rating</div>
         </div>
         <div class="row" style="background-color:aliceblue; margin: 0px 0px 20px 0px;">
-            <div class="col-md-9">
-                <h1>Dr. Kanish Sinha</h1>
-                <h5>MBBS</h5>
-                <div>rating</div>
-                <div>clicnic or hospital name</div>
-                <button class="btn btn-primary">Chat now</button>
-                <button class="btn btn-primary">Book a Appointment</button>
+            <div class="col-md-3 text-center">
+                <img [src]="pic_src" [alt]="pic_src" style=" border-radius: 50%;height: 175px;">
             </div>
-            <div class="col-md-3"><img [src]="pic_src" [alt]="pic_src"></div>
+            <div class="col-md-9">
+                <h3 class="heading">Dr. Rufus Sunu</h3>
+                <h4 style="margin: 0%;">Dentist</h4>
+                <div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <div>ILS Hospital</div>
+                <div style="color: green;"><i class="fa fa-circle" aria-hidden="true"></i> Available now</div>
+                <div style="float: right;">
+                    <button class="btn btn-primary">Book A Appointment</button>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Chat now</button>
+                </div>
+            </div>
         </div>
         <div class="row" style="background-color:aliceblue; margin: 0px 0px 20px 0px;">
-            <div class="col-md-9">
-                <h1>Dr. Sanaur Rehman</h1>
-                <h5>MBBS</h5>
-                <div>rating</div>
-                <div>clicnic or hospital name</div>
-                <button class="btn btn-primary">Chat now</button>
-                <button class="btn btn-primary">Book a Appointment</button>
+            <div class="col-md-3 text-center">
+                <img [src]="pic_src" [alt]="pic_src" style=" border-radius: 50%;height: 175px;">
             </div>
-            <div class="col-md-3"><img [src]="pic_src" [alt]="pic_src"></div>
+            <div class="col-md-9">
+                <h3 class="heading">Dr. Kanish Sinha</h3>
+                <h4 style="margin: 0%;">Dentist</h4>
+                <div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <div>ILS Hospital</div>
+                <div style="color: green;"><i class="fa fa-circle" aria-hidden="true"></i> Available now</div>
+                <div style="float: right;">
+                    <button class="btn btn-primary">Book A Appointment</button>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Chat now</button>
+                </div>
+            </div>
         </div>
         <div class="row" style="background-color:aliceblue; margin: 0px 0px 20px 0px;">
-            <div class="col-md-9">
-                <h1>Dr. Rehana Tausif</h1>
-                <h5>MBBS</h5>
-                <div>rating</div>
-                <div>clicnic or hospital name</div>
-                <button class="btn btn-primary">Chat now</button>
-                <button class="btn btn-primary">Book a Appointment</button>
+            <div class="col-md-3 text-center">
+                <img [src]="pic_src" [alt]="pic_src" style=" border-radius: 50%;height: 175px;">
             </div>
-            <div class="col-md-3"><img [src]="pic_src" [alt]="pic_src"></div>
+            <div class="col-md-9">
+                <h3 class="heading">Dr. Sanaur Rehman</h3>
+                <h4 style="margin: 0%;">Dentist</h4>
+                <div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <div>ILS Hospital</div>
+                <div style="color: green;"><i class="fa fa-circle" aria-hidden="true"></i> Available now</div>
+                <div style="float: right;">
+                    <button class="btn btn-primary">Book A Appointment</button>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Chat now</button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="background-color:aliceblue; margin: 0px 0px 20px 0px;">
+            <div class="col-md-3 text-center">
+                <img [src]="pic_src" [alt]="pic_src" style=" border-radius: 50%;height: 175px;">
+            </div>
+            <div class="col-md-9">
+                <h3 class="heading">Dr. Rehana Tausif</h3>
+                <h4 style="margin: 0%;">Dentist</h4>
+                <div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <div>ILS Hospital</div>
+                <div style="color: green;"><i class="fa fa-circle" aria-hidden="true"></i> Available now</div>
+                <div style="float: right;">
+                    <button class="btn btn-primary">Book A Appointment</button>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Chat now</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<div>pagination</div>
