@@ -12,9 +12,9 @@
             <div class="col category">Low to high</div>
             <div class="col category">High to low</div>
         </div>
-        <div *ngFor="let i of item" class="row">
-            <div class="col" *ngFor="let i of item">
-                <div class="card text-center">
+        <div *ngFor="let i of item" class="row justify-content-center">
+            <div class="col text-center" *ngFor="let i of item" style="max-width: 300px;">
+                <div class="card" style="margin: 10px 5px 10px 5px;">
                     <img [src]="pic_src" alt="Denim Jeans">
                     <h1>Medicine name</h1>
                     <p class="price">$19.99</p>
