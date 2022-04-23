@@ -11,8 +11,10 @@
                 <li class="nav-item"> <a class="nav-link" routerLink="medicines">Medicines</a> </li>
             </ul>
             <div class="d-flex">
-                <button class="btn btn-outline-info" (click)="login()">LOGIN</button>
-                <button class="btn btn-outline-info" (click)="signup()">SIGNUP</button>
+                <i class="fa fa-shopping-cart fa-3x" style="color:white; cursor: pointer;" aria-hidden="true"></i>
+                <button *ngIf="!userService.loggedIn()" class="btn btn-outline-info" (click)="login()">LOGIN</button>
+                <button *ngIf="!userService.loggedIn()" class="btn btn-outline-info" (click)="signup()">SIGNUP</button>
+                <i *ngIf="userService.loggedIn()" class="fa fa-user-circle fa-3x" style="color: white; cursor: pointer;" aria-hidden="true"></i>
             </div>
         </div>
     </nav>

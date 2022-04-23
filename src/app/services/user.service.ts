@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
+import {Cookie} from 'ng2-cookies/ng2-cookies'
 @Injectable({
   providedIn: 'root'
 })
@@ -12,5 +12,8 @@ export class UserService {
   }
   signup(data:any){
     return this.http.post(this.url+'signup',data)
+  }
+  loggedIn() {
+    return !!Cookie.get('token');
   }
 }
